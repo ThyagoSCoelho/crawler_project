@@ -68,9 +68,5 @@ RSpec/DescribeClass:
 RSpec/MultipleMemoizedHelpers:
   Max: 7
 
-RSpec/Capybara/FeatureMethods:
-  EnabledMethods:
-    - feature
-
 Lint/MissingSuper:
   Enabled: false
