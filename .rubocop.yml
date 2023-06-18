@@ -1,0 +1,107 @@
+require:
+  - rubocop-rails
+  - rubocop-rspec
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 2.5
+  Exclude:
+    - "config/application.rb"
+    - "db/schema.rb"
+    - "db/migrate/*"
+    - "db/seeds.rb"
+    - "node_modules/**/*"
+    - "vendor/**/*"
+    - "tmp"
+    - "ssl"
+    - "doc"
+    - "log"
+    - "coverage"
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 120
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 20
+
+Style/HashEachMethods:
+  Enabled: false
+
+Metrics/BlockLength:
+  AllowedMethods:
+    - describe
+    - context
+    - feature
+    - within_store_subdomain
+    - define
+    - factory
+    - within_store_subdomain
+    - included
+    - with_options
+    - shared_examples
+  Exclude:
+    - "db/seeds.rb"
+    - "config/routes.rb"
+
+Style/ClassAndModuleChildren:
+  EnforcedStyle: compact
+
+RSpec/AnyInstance:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Max: 20
+
+RSpec/ExpectInHook:
+  Enabled: false
+
+Rails/UnknownEnv:
+  Enabled: false
+
+Rails/SkipsModelValidations:
+  Exclude:
+    - "db/seeds.rb"
+    - spec/**/*_spec.rb
+
+Rails/ActiveRecordAliases:
+  Exclude:
+    - spec/**/*_spec.rb
+
+Rails/UniqueValidationWithoutIndex:
+  Enabled: false
+
+RSpec/NestedGroups:
+  Max: 7
+
+RSpec/ContextWording:
+  Enabled: false
+
+RSpec/DescribeClass:
+  Exclude:
+    - "spec/features/**/*"
+
+Rails/DynamicFindBy:
+  AllowedMethods:
+    - find_by_hour
+    - find_by_now
+
+RSpec/MultipleMemoizedHelpers:
+  Max: 7
+
+RSpec/Capybara/FeatureMethods:
+  EnabledMethods:
+    - feature
+
+Lint/MissingSuper:
+  Enabled: false
