@@ -9,7 +9,6 @@ class Crawler
 	end
 
 	def fetch_json(url, options = {})
-		binding.pry
 		response = @agent.get(build_url(url, options))
 		json = JSON.parse(response.body)
 		return json
