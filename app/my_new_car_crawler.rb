@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../lib/crawler'
 require 'pry'
 
@@ -17,28 +19,28 @@ class MyNewCarCrawler
 
   private
 
-  def data_structure(documents)  
+  def data_structure(documents)
     documents.map do |document|
       {
         modelo: document['modeloNome'],
         marca: document['marcaNome'],
-        valor: document["preco"],
-        ano_fabricacao: document["anoFabricacao"],
-        ano_modelo: document["anoModelo"],
+        valor: document['preco'],
+        ano_fabricacao: document['anoFabricacao'],
+        ano_modelo: document['anoModelo'],
         image: save_image(document['fotoCapa'])
       }
     end
   end
-  
+
   def save_image(route_path)
     image_data = @crawler.fetch_image(MEU_CARRO_NOVO_STATIC, route_path)
-    destination_path = 'data/images/' + route_path.split('/').last
+    destination_path = "data/images/#{route_path.split('/').last}"
     File.open(destination_path, 'wb') do |file|
       file.write(image_data)
     end
     destination_path
   end
-  
+
   def save_data(data)
     date = Time.now
     destination_path = "data/#{date.to_i}.json"
@@ -46,7 +48,7 @@ class MyNewCarCrawler
       file.write(data.to_json)
     end
   end
-  
+
   def options(limit, page, type, city)
     {
       limite: limit,
@@ -56,7 +58,6 @@ class MyNewCarCrawler
     }
   end
 end
-
 
 main = MyNewCarCrawler.new
 main.call(10, 1, 'A', 'Curitiba')
