@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require_relative 'services/crawler'
-require_relative 'logger'
+require_relative 'data_logger'
 require 'pry'
 
 MEU_CARRO_NOVO_API = 'https://www.meucarronovo.com.br/api/v2/busca'
@@ -36,7 +36,7 @@ class MyNewCarCrawler
   end
 
   def save(documents, options)
-    logger = Logger.new(documents, options)
+    logger = DataLogger.new(documents, options)
     logger.save
   end
 end
