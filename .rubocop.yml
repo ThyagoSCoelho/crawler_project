@@ -2,6 +2,7 @@ require:
   - rubocop-rspec
 
 AllCops:
+  NewCops: enable
   Exclude:
     - 'Gemfile.lock'
   Include:
@@ -12,12 +13,12 @@ Naming/FileName:
   Exclude:
     - 'Gemfile'
 
-Style/Encoding:
-  Enabled: true 
-
 Layout/IndentationWidth:
   Enabled: true
-  IndentationWidth: 2 
+  Width: 2
+
+Style/Encoding:
+  Enabled: true 
 
 Lint/AmbiguousOperator:
   Enabled: true
