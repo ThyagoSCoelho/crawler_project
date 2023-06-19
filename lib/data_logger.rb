@@ -2,7 +2,7 @@
 
 MEU_CARRO_NOVO_STATIC = 'https://static2.meucarronovo.com.br/imagens-dinamicas/lista/fotos/'
 
-class Logger
+class DataLogger
   def initialize(documents, options = nil)
     @documents = documents
     @options = options
@@ -13,8 +13,6 @@ class Logger
   end
 
   private
-
-  def destination_path; end
 
   def data_structure
     @documents.map do |document|
