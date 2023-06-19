@@ -6,6 +6,7 @@ require 'json'
 require 'rspec'
 require 'vcr'
 
+require_relative '../spec_helper'
 require_relative '../../lib/helpers/url_builder'
 require_relative '../../lib/services/crawler'
 

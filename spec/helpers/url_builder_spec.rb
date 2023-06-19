@@ -3,6 +3,7 @@
 require 'uri'
 require 'rspec'
 
+require_relative '../spec_helper'
 require_relative '../../lib/helpers/url_builder'
 
 describe URLBuilder do
