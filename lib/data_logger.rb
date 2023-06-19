@@ -35,9 +35,7 @@ class DataLogger
 
   def save_data(data)
     destination_path = "data/#{file_name}.json"
-    File.open(destination_path, 'w') do |file|
-      file.write(data.to_json)
-    end
+    File.write(destination_path, data.to_json)
   end
 
   def save_image(route_path)
@@ -45,9 +43,7 @@ class DataLogger
     return 'no_image' if image_data == 'No image found'
 
     destination_path = "data/images/#{route_path.split('/').last}"
-    File.open(destination_path, 'wb') do |file|
-      file.write(image_data)
-    end
+    File.binwrite(destination_path, image_data)
     destination_path
   end
 
