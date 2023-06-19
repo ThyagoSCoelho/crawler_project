@@ -19,6 +19,6 @@ class URLBuilder
   private
 
   def query_params
-    @options.map { |key, value| [key.to_s, value.to_s] }.to_h
+    @options.to_h { |key, value| [key.to_s, value.to_s] }
   end
 end
