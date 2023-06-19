@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+What things you need to install the software and how to install them:
 
 ```
 ruby 3.1.3
@@ -19,19 +19,23 @@ ruby 3.1.3
 It is necessary to run the project, that you run the command:
 
 ```
-bundle install
+ $ bundle install
 ```
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+Crawler testing can be a challenging task, but not impossible, I adopted tests involving more code, testing how it is bringing the data, run the tests:
+
+```
+ $ bundle exec rspec 
+```
 
 ## Running crawler
 
 Run the project under development with the following command:
 
 ```
-  ruby app/my_new_car_crawler.rb
+ $ ruby init.rb
 ```
 
 
@@ -40,7 +44,7 @@ Run the project under development with the following command:
 Use rubocop to check the code:
 
 ```
-  bundle exec rubocop
+ $ bundle exec rubocop
 ```
 
 ## Deployment
