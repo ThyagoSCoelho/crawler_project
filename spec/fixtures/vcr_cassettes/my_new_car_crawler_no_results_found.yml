@@ -1,0 +1,98 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.meucarronovo.com.br/api/v2/busca?cidade=Curitiba&limite=10&pagina=800&tipoVeiculo=A
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Mechanize/2.9.1 Ruby/3.1.3p185 (http://github.com/sparklemotion/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - www.meucarronovo.com.br
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - '300'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.meucarronovo.com.br
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - 'default-src ''unsafe-inline'' ''self'' *.meucarronovo.com.br *.gstatic.com
+        *.googleapis.com *.artfut.com; img-src ''unsafe-inline'' ''self'' data: https:;
+        script-src ''self'' *.meucarronovo.com.br ''unsafe-inline'' ''unsafe-eval''
+        *.facebook.net *.google.com *.googlesyndication.com *.google.com.br *.googletagmanager.com
+        *.gstatic.com *.googleapis.com *.googletagservices.com *.google-analytics.com
+        *.googleadservices.com citydsp.com cityadspix.com *.citydsp.com *.criteo.net
+        *.criteo.com *.trovit.com *.artfut.com *.getblue.io *.enviou.com.br *.clarity.ms
+        *.doubleclick.net *.hotjar.com *.adobedtm.com *.evergage.com *.evgnet.com
+        action.metaffiliation.com cdn.cookielaw.org *.ampproject.org x.cnt.my retagro.com
+        anilima.com; font-src ''self'' *.meucarronovo.com.br *.gstatic.com *.googleapis.com
+        *.hotjar.com; connect-src ''self'' *.meucarronovo.com.br *.facebook.net *.facebook.com
+        *.googlesyndication.com *.google.com.br *.google.com *.googletagservices.com
+        *.googletagmanager.com *.googleadservices.com *.googleapis.com *.google-analytics.com
+        *.gstatic.com *.go2cloud.org citydsp.com cityadspix.com *.citydsp.com *.criteo.com
+        *.criteo.net *.trovit.com *.admitad.com *.artfut.com *.getblue.io *.enviou.com.br
+        *.clarity.ms *.doubleclick.net *.hotjar.com *.hotjar.io *.adobedtm.com *.demdex.net
+        limaaudit.azurewebsites.net *.evergage.com *.evgnet.com action.metaffiliation.com
+        cdn.cookielaw.org *.onetrust.com votorantim.sc.omtrdc.net retagro.com anilima.com;
+        frame-src ''self'' *.meucarronovo.com.br *.google.com *.googlesyndication.com
+        *.googletagmanager.com *.criteo.com *.criteo.net *.getblue.io *.doubleclick.net
+        *.hotjar.com *.demdex.net'
+      Date:
+      - Mon, 19 Jun 2023 06:47:22 GMT
+      Etag:
+      - W/"23bc-6ri6S0VYilnxv30oetVzf1HLlcA:dtagent10261230220152234S0z9:dtagent10261230220152234S0z9:dtagent10261230220152234S0z9"
+      Server-Timing:
+      - dtSInfo;desc="0", dtRpid;desc="626056529"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 09a4a5aefc132744c0fa1ff0f7a65e5a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - GRU3-C2
+      X-Amz-Cf-Id:
+      - Hckn43nDezc5hum5IBJp0gGhEubyQhZbNKbi2y86FfHq9CGw8XpxqQ==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+  recorded_at: Mon, 19 Jun 2023 06:47:22 GMT
+recorded_with: VCR 6.1.0
