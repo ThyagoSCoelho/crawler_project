@@ -33,4 +33,4 @@ search_scope(options_params(20, 1, 'A', 'Francisco Beltrão'))
 # pesquisa de 30 a cada 1 pagina de 6 paginas no total - A diferença em segundos entre as datas é: 7259ms
 
 # Curitiba
-# pesquisa de 100 a cada 1 pagina de 738 paginas no total - A diferença em segundos entre as datas é: 9.5386m
+# pesquisa de 100 a cada 1 pagina de 74 paginas no total - A diferença em segundos entre as datas é: 9.5386m
