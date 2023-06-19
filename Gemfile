@@ -8,5 +8,5 @@ gem 'rspec', '>= 3.2'
 gem 'rubocop', '~> 1.30'
 gem 'rubocop-rspec'
 gem 'thor', '1.1.0'
-
-# gem 'rails'
+gem 'vcr', '~> 6.0'
+gem 'webmock', '~> 3.14'
