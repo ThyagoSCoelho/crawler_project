@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../helper/url_builder'
+require_relative '../helpers/url_builder'
 
 require 'mechanize'
 require 'json'
@@ -17,6 +17,8 @@ class Crawler
 
   def fetch_image(url, route)
     response = @agent.get(url + route)
+    return 'No image found' if response.code == '404'
+
     response.body
   end
 
