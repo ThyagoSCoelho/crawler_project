@@ -105,8 +105,8 @@ DEPENDENCIES
   rubocop (~> 1.30)
   rubocop-rspec
   thor (= 1.1.0)
-  vcr
-  webmock
+  vcr (~> 6.0)
+  webmock (~> 3.14)
 
 BUNDLED WITH
    2.4.14
